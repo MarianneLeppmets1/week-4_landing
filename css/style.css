@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {font-family: 'Lato', sans-serif;
+}
+
+.heater-conteiner{
+    background-color: rgb(127, 124, 119);
+}
+
+header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(69, 56, 56, 0.674), rgba(229, 152, 152, 0.566)), 
+    url("../images/pexels-eternal-happiness-3326362.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+.text-box{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading-primary {
+    text-transform: uppercase;
+}
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 2rem;
+    color: #777;
+    animation-name: MoveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes MoveInLeft {
+    0% {
+        transform: translate(-300px);
+        opacity: 0;
+    }
+    80% {
+        transform: translate(20px);
+    }
+    90% {
+        transform: translate(-15px);
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    
+}
+.heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 16,5rem;
+    color: white;
+    animation-name: Moverightin;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+
+
+    @keyframes Moverightin {
+        0% {
+            transform: translate(300px);
+            opacity: 0;
+        }
+        80% {
+            transform: translate(-20px);
+        }
+        90% {
+            transform: translate(15px);
+        }
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
+
+
+
+.btn-container {
+    text-align: center;
+ }
+ 
+ .btn {
+     display: inline-block;
+     text-decoration: none;
+     padding: 1rem;
+     margin: 2rem;
+     border: 1px solid white;
+     text-transform: capitalize;
+     font-size: 1.6rem;
+     color: rgb(250, 248, 244);
+     transition: all 0,3s;
+
+ }
+
+ .btn:hover {
+     background-color: rgba(119, 119, 119, 0.383);
+     color:rgba(188, 143, 143, 0.97);
+     transform: translateY(-3px);
+}
+.btn:active {
+    transform: translate(0);
+}
+
+
+.footer {
+color: #777;
+text-align: center;
+padding-top: 0,5rem;
+animation-name: Footer;
+animation-duration: 5s;
+animation-timing-function: ease-out;
+}
+
+@keyframes Footer {
+    0% {
+        transform: translate(300px);
+        opacity: 0;
+    }
+    80% {
+        transform: translate(-20px);
+    }
+    90% {
+        transform: translate(15px);
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+
+
+
