@@ -60,7 +60,7 @@ header {
 .heading-primary-sub {
     display: block;
     font-size: 2rem;
-    letter-spacing: 9px;
+    letter-spacing: 9pt;
     color: white;
     animation-name: Moverightin;
     animation-duration: 5s;
